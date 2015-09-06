@@ -1,0 +1,479 @@
+
+@import url("defaultCommon.css");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,600);
+@import url(../fontawesome/css/font-awesome.css);
+
+@font-face {
+	font-family: "OpenSans Bold";
+	src: url('../fonts/Open_Sans/OpenSans-Bold.ttf');		
+}
+
+@font-face {
+	font-family: "OpenSans Light";
+	src: url('../fonts/Open_Sans/OpenSans-Light.ttf');	
+}
+
+svg.FS20_off {
+	background: red;	
+}
+
+
+* {
+	font-family: 'OpenSans Light', Sans, sans-serif;
+	font-size: 14px;
+}
+
+body { 
+	font-size: 14px;
+	background: #F3F3F3;
+}
+
+#logo  {
+	position: fixed;
+	margin-top:0px;
+	margin-left:0px;	
+	background: #5D9BFB;
+	width:200px;
+	height:120px;
+	z-index: 1000;
+}
+
+#logo:before {
+	font-family: FontAwesome;
+	font-size: 3em;
+	color: white;
+	content: "\f015";	
+	display: inline-block;
+	vertical-align: center;
+	padding-left: 0.5em;
+	padding-top: 0.5em;
+	text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#logo:after {
+	font-family: OpenSans Bold;
+	font-size: 30px;
+	color: white;
+	content: "FHEM";
+	padding-left: 20px;
+}
+
+/** Menu **/
+
+#menu    { 
+	position: absolute;
+	margin-top:150px;
+	margin-left:20px;
+	
+}
+
+#menu table {
+	border: none;
+	width: 200px;
+}
+
+#menu table.room td {	
+
+}
+
+#menu table.room {
+	background:transparent;
+}
+
+#menu table.room tbody tr:hover {
+	background: #9DA6B2;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+}
+
+#menu table.room tbody tr:hover a {
+	color:white;
+}
+
+#menu table.room.roomBlock2 tbody tr td div a:before {
+	font-family: FontAwesome;
+	font-size: 1em;
+	color: #4B5F66;
+	content: "\f0e4";
+	display: inline-block;
+	vertical-align: center;
+	text-rendering: auto;
+	padding-right: 0.5em;
+	//visibility: hidden;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;	
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;	
+}
+
+#menu table.room tr.sel {
+	background: #21282E;	
+}
+
+#menu table.room tr.sel td div a {
+	color:white;
+}
+
+
+#menu table.room.roomBlock2 tbody tr:hover td div a:before {
+	color: white;
+}
+
+#menu table.room.roomBlock2 tbody tr td a:focus {
+	color: white;
+}
+
+#menu table.room.roomBlock1 tbody tr td div a:before {	
+	font-family: FontAwesome;
+	font-size: 1em;
+	color: #4B5F66;
+	content: "\f0c7";
+	display: inline-block;
+	vertical-align: center;
+	text-rendering: auto;
+	padding-right: 0.5em;
+	//visibility: hidden;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;	
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#menu table.room.roomBlock1 tbody tr:hover td div a:before {
+	color: white;
+}
+
+#menu table.room.roomBlock1 tbody tr td a:visited {
+	background: black;
+}
+
+#menu img.icon.icoEverything {
+	display: none;	
+}
+
+#menu table a {	
+	color: #788E9B;
+	font-size: 18px;
+	font-family: 'OpenSans Light', Sans, sans-serif;
+	text-decoration: none;	
+	padding-left: 10px;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	padding: 2px;
+	padding-left: 10px;
+}
+
+#menuScrollArea { 
+	background: #313944;
+	width: 200px;
+	left:0px;
+	top:0px;
+	height:100%;    
+	position:fixed;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+
+#menu h3 {
+	color: white;
+	font-size: 20px;
+}
+
+div#menuScrollArea div#menu {
+	color: white;
+}
+
+
+#right ul ul a:hover {
+	font-weight: bold;
+}
+
+#buttontodo {
+	display: inline-block;
+	background: #FDFDFD;
+	color: #879096;
+	height: 2em;
+	line-height: 1.9em;
+	padding-top: 0px;
+	padding-right: 0.1em;
+	padding-left:1em;
+	padding-right:1em;
+	padding-bottom: 0px;
+	border-radius: 10px;
+	font-weight: 600;	
+	text-decoration: none;	
+}
+
+#buttontodo {
+	background: #43BC8A;
+	color: white;
+}
+
+input[type=submit] {
+	padding:5px 15px; 
+	background:#43BC8A;
+	color: white;
+	text-transform: uppercase;
+	font-size: 12px;
+	border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=submit]:hover {
+	background: #54AA87;
+}
+
+
+/** Tables **/
+
+table {
+	border-collapse: collapse;
+	border-radius: 0px;		
+}
+
+table.block {
+	border: none;
+	background: transparent;
+}
+
+table.block tr.odd {
+	background: transparent;
+}
+
+table.block tr.even {
+	background: transparent;
+}
+
+/** Top Bar **/
+
+#hdr { 
+	position:fixed;
+	top:0px;
+	padding-top: 30px;
+	left:200px;
+	right: 0px;
+	height: 90px;
+	z-index: 1000;
+	overflow: hidden;
+   	background: #5D9BFB;
+}
+
+#hdr input {
+	height: 25px;	
+	border: none;
+	margin: 0;
+	width: 600px;
+	background: #F9FAFC;
+}
+
+#hdr table.header td form {
+	padding-left: 30px;
+}
+
+#hdr table.header td form:before {	
+	position: relative;	
+	font-family: FontAwesome;
+	font-weight: bold;
+	font-size: 20px;
+	width: 1.5em;	
+	line-height: 1em;
+	vertical-align: middle;
+	color: white;
+	content: "\f120";
+	display: inline-block;
+	vertical-align: center;
+	text-rendering: auto;	
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#hdr table.header td form:after input:focus {
+	display: none;
+}
+
+/** CONTENT **/
+
+#errmsg {
+	position: fixed;
+	top: 60px;
+	left:200px;	
+	background-color: #FA6666;
+	color: white;
+	z-index: 2000;
+	width: 400px;
+	height: 3em;
+}
+
+#errmsg:before {	
+	position: relative;	
+	font-family: FontAwesome;
+	font-weight: bold;
+	font-size: 20px;
+	width: 1.5em;	
+	padding: 0.5em;	
+	line-height: 1em;
+	vertical-align: middle;
+	color: white;
+	content: "\f071";
+	display: inline-block;
+	vertical-align: center;
+	text-rendering: auto;
+	z-index: 2000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+#content {
+	position:absolute;
+	top:150px;
+	left:210px;
+	bottom:20px;
+	right:10px;
+}
+
+div.ui-widget-content {
+	background: #EAEDF1;
+}
+
+div.ui-dialog  {	
+	border-top-color: #323A45;
+	border-right-color: #323A45;
+	border-left-color: #323A45;
+	border-bottom-color: #323A45;
+}
+
+#right {
+	position:absolute;
+	top:150px;
+	left:210px;
+	bottom:20px;
+	right:10px;
+}
+
+.devType {
+	font-size: 18px;
+}
+
+h2, h3, h4 {
+	color: #4B5F66;
+}
+
+div.dist { 
+	padding-top:0.3em;
+}
+
+button.dist {
+	margin:10px;
+	background:transparent;
+	border:0px;
+	cursor:pointer;
+}
+
+/** Dropdowns and Buttons **/
+a:active, a:hover {
+	outline:0;	
+}
+
+a {
+	background-color: transparent;
+	color: black;
+}
+
+select {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+	background: #FDFDFD;
+	cursor:pointer;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-family: 'OpenSans Light';
+	border-radius: 4px;
+	border: 0;
+	text: "test";	
+	text-transform: uppercase;
+}
+
+select:hover {
+	background: #4B5F66;
+	color: white;
+}
+
+.dname {
+	font-family: OpenSans Bold;
+	color: #4B5F66;
+}
+
+.changes {
+	color: #FA6666;	
+}
+
+/** UI Elements **/
+
+/* Slider */
+
+.set .slider {
+	background: #9EA7B3;
+	float: left;
+	width: 250px;
+	height: 26px;
+}
+
+.handle {
+	position: relative;
+	cursor: pointer;
+	width:25px;
+	height:20px;
+	line-height:20px;
+	
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-user-select:none;
+	border-radius:5px;
+	color:white;
+	border-color: #5E6D81;
+	text-align:center;
+	
+}
+
+input.attr {
+	font-family: OpenSans Light;
+	font-size: 14px;
+}
+
+input[type=checkbox] {
+	background: #5E6D81;
+	display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(check_radio_sheet.png) left top no-repeat;
+    cursor:pointer;
+}
+
+.changed {
+	color: #F96768;
+}
+
+
+
+
+
