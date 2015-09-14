@@ -1,0 +1,210 @@
+@import url(../fontawesome/css/font-awesome.css);
+
+@font-face {
+	font-family: "OpenSans Light";
+	src: url('../fonts/Open_Sans/OpenSans-Light.ttf');	
+}
+
+rect.border {
+	rx: 2px;
+	ry: 2px;
+}
+
+text {	
+    font-family: 'OpenSans Light';
+    font-size: 12px;
+}
+text.title {
+    font-size: 16px;
+}
+text.copy {
+    text-decoration: underline;
+    stroke: none;
+    fill: blue;
+}
+text.paste {
+    text-decoration: underline;
+    stroke: none;
+    fill: blue;
+}
+polyline {
+    stroke: black;
+    fill: none;
+}
+
+.border {
+    stroke: transparent;
+    fill: #2D3037;
+}
+
+.vgrid {
+    stroke: #61646C;
+    stroke-dasharray: 2, 6;
+}
+.hgrid {
+    stroke: #61646C;
+    stroke-dasharray: 2, 6;
+}
+.pasted {
+    stroke: #61646C;
+    stroke-dasharray: 1, 1;
+}
+.l0 {
+    stroke: #FA5E41;
+}
+text.l0 {
+    stroke: none;
+    fill: #FA5E41;
+}
+.l1 {
+    stroke: #6CCF5F;
+}
+text.l1 {
+    stroke: none;
+    fill: #6CCF5F;
+}
+.l2 {
+    stroke: #497FDC;
+}
+text.l2 {
+    stroke: none;
+    fill: #497FDC;
+}
+.l3 {
+    stroke: #5A2D67;
+}
+text.l3 {
+    stroke: none;
+    fill: #5A2D67;
+}
+.l4 {
+    stroke: #EA9977;
+}
+text.l4 {
+    stroke: none;
+    fill: #EA9977;
+}
+.l5 {
+    stroke: white;
+}
+text.l5 {
+    stroke: none;
+    fill: white;
+}
+.l6 {
+    stroke: #2BB9B8;
+}
+text.l6 {
+    stroke: none;
+    fill: #2BB9B8;
+}
+.l7 {
+    stroke: #61646C;
+}
+text.l7 {
+    stroke: none;
+    fill: #61646C;
+}
+.l8 {
+    stroke: #F9EDE9;
+}
+text.l8 {
+    stroke: none;
+    fill: #F9EDE9;
+}
+.l0fill {
+    stroke: #FA5E41;
+    fill: #FA5E41;
+}
+text.l0fill {
+    stroke: none;
+    fill: #FA5E41;
+}
+.l1fill {
+    stroke: #6CCF5F;
+    fill: #6CCF5F;
+}
+text.l1fill {
+    stroke: none;
+    fill: #6CCF5F;
+}
+.l2fill {
+    stroke: #497FDC;
+    fill: #497FDC;
+}
+text.l2fill {
+    stroke: none;
+    fill: #497FDC;
+}
+.l3fill {
+    stroke: #5A2D67;
+    fill: #5A2D67;
+}
+text.l3fill {
+    stroke: none;
+    fill: #5A2D67;
+}
+.l4fill {
+    stroke: #EA9977;
+    fill: #EA9977;
+}
+text.l4fill {
+    stroke: none;
+    fill: #EA9977;
+}
+.l5fill {
+    stroke: #2BB9B8;
+    fill: #2BB9B8;
+}
+text.l5fill {
+    stroke: none;
+    fill: #2BB9B8;
+}
+.l6fill {
+    stroke: white;
+    fill: white;
+}
+text.l6fill {
+    stroke: none;
+    fill: white;
+}
+.l0dot {
+    stroke: #FA5E41;
+    stroke-dasharray: 2, 4;
+}
+text.ldot {
+    stroke: none;
+    fill: #FA5E41;
+}
+.l1dot {
+    stroke: #6CCF5F;
+    stroke-dasharray: 2, 4;
+}
+text.ldot {
+    stroke: none;
+    fill: #6CCF5F;
+}
+.l0fill_stripe {
+    stroke: #FA5E41;
+    fill: #FA5E41;
+}
+text.l0fill_stripe {
+    stroke: none;
+    fill: #FA5E41;
+}
+.l1fill_stripe {
+    stroke: #6CCF5F;
+    fill: #6CCF5F;
+}
+text.l1fill_stripe {
+    stroke: none;
+    fill: #6CCF5F;
+}
+.l0fill_gyr {
+    stroke: #FA5E41;
+    fill: #FA5E41;
+}
+text.l0fill_gyr {
+    stroke: none;
+    fill: #FA5E41;
+}

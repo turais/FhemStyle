@@ -155,9 +155,53 @@ body {
 	background: black;
 }
 
-#menu img.icon.icoEverything {
-	display: none;	
+/* EVERYTHING */
+
+
+.icoEverything {
+	height: 0;
+	width: 0;
+	
+	font-size: 0;
+	color: transparent;
+	position: relative;
+	
+	content: "fake content";
 }
+
+.icoEverything:before, after {
+	position: absolute;
+	top: 0;
+	left: 0;	
+}
+
+.icoEverything:before {
+
+	position: relative;
+	
+	font-family: FontAwesome;
+	font-size: 18px;
+	color: #4B5F66;
+	content: "\f0ac";
+	display: inline-block;
+	vertical-align: center;
+	text-rendering: auto;
+	padding-right: 0.5em;
+	//visibility: hidden;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;	
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+a:hover .icoEverything:before {
+	color: white;
+	
+}
+
 
 #menu table a {	
 	color: #788E9B;
@@ -473,7 +517,251 @@ input[type=checkbox] {
 	color: #F96768;
 }
 
+/* Charts */
+
+/* PREV */
+
+.Prev {
+	height: 0;
+	width: 0;
+	
+	font-size: 0;
+	color: transparent;
+	position: relative;
+	
+	content: "fake content";
+}
+
+.Prev:before, after {
+	position: absolute;
+	top: 0;
+	left: 0;	
+}
+
+.Prev:before {
+	
+	position: relative;	
+	font-size: 22px;
+	color: #5D6C80;
+	content: "\f060";
+	display: inline-block;
+	z-index: 1000;
+	vertical-align: center;
+	
+	width: 24px;
+	height: 24px;	
+	
+	padding-top: 2px;
+	padding-right: 0.2em;
+	padding-left:0.3em;
+	padding-right:0.2em;
+	padding-bottom: 2px;
+	border-radius: 10px;
+	
+	font-family: FontAwesome;
+	text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+.Prev:hover:before {
+	color: white;
+	background: #9DA6B2;
+}
+
+/* NEXT */
+
+.Next {
+	height: 0;
+	width: 0;
+	
+	font-size: 0;
+	color: transparent;
+	position: relative;
+	
+	content: "fake content";
+}
+
+.Next:before, after {
+	position: absolute;
+	top: 0;
+	left: 0;	
+}
+
+.Next:before {
+	
+	position: relative;	
+	font-size: 22px;
+	color: #5D6C80;
+	content: "\f061";
+	display: inline-block;
+	z-index: 1000;
+	vertical-align: center;
+	
+	width: 24px;
+	height: 24px;	
+	
+	padding-top: 2px;
+	padding-right: 0.2em;
+	padding-left:0.3em;
+	padding-right:0.2em;
+	padding-bottom: 2px;
+	border-radius: 10px;
+	
+	font-family: FontAwesome;
+	text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+.Next:hover:before {
+	color: white;
+	background: #9DA6B2;
+}
+
+/* ZOOM-OUT */
+
+.Zoom-out {
+	height: 0;
+	width: 0;
+	
+	font-size: 0;
+	color: transparent;
+	position: relative;
+	
+	content: "fake content";
+}
+
+.Zoom-out:before, after {
+	position: absolute;
+	top: 0;
+	left: 0;	
+}
+
+.Zoom-out:before {
+	position: relative;	
+	font-size: 22px;
+	color: #5D6C80;
+	content: "\f010";
+	display: inline-block;
+	z-index: 1000;
+	vertical-align: center;
+	
+	width: 24px;
+	height: 24px;	
+	
+	padding-top: 2px;
+	padding-right: 0.2em;
+	padding-left:0.3em;
+	padding-right:0.2em;
+	padding-bottom: 2px;
+	border-radius: 10px;
+	
+	font-family: FontAwesome;
+	text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.Zoom-out:hover:before {
+	color: white;
+	background: #9DA6B2;
+}
+
+/* ZOOM-IN */
 
 
+
+.Zoom-in {
+	height: 0;
+	width: 0;
+	
+	font-size: 0;
+	color: transparent;
+	position: relative;
+	
+	content: "fake content";
+}
+
+.Zoom-in:before, after {
+	position: absolute;
+	top: 0;
+	left: 0;	
+}
+
+.Zoom-in:before {
+	position: relative;	
+	font-size: 22px;
+	color: #5D6C80;
+	content: "\f00e";
+	display: inline-block;
+	z-index: 1000;
+	vertical-align: center;
+	
+	width: 24px;
+	height: 24px;	
+	
+	padding-top: 2px;
+	padding-right: 0.2em;
+	padding-left:0.3em;
+	padding-right:0.2em;
+	padding-bottom: 2px;
+	border-radius: 10px;
+	
+	font-family: FontAwesome;
+	text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.Zoom-in:hover:before {
+	color: white;
+	background: #9DA6B2;
+}
+
+
+
+
+/* FS20_on */
+
+.FS20_on {
+	height: 0;
+	width: 0;	
+	font-size: 0;
+	color: transparent;
+	position: relative;	
+	content: "fake content";
+
+}
+
+.FS20_on:before, after {
+	position: absolute;
+	top: 0;
+	left: 0;	
+}
+
+.FS20_on:before {
+	position: relative;	
+	font-size: 24px;
+	color: #FDCC59;
+	content: "\f0eb";
+	display: inline-block;
+	z-index: 1000;
+	vertical-align: center;
+	
+	width: 28px;
+	height: 28px;
+	
+	font-family: FontAwesome;
+	text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.FS20_on:hover:before {
+	color: #e3b750;	
+}
 
 
